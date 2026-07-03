@@ -1,0 +1,31 @@
+CREATE TABLE fees (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+grade TEXT,
+admission_fee INTEGER,
+annual_fee INTEGER,
+transport_fee INTEGER
+);
+
+CREATE TABLE seats (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+grade TEXT,
+available_seats INTEGER
+);
+
+CREATE TABLE transport (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+area TEXT,
+available TEXT
+);
+
+CREATE TABLE faq (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+question TEXT,
+answer TEXT
+);
+
+CREATE TABLE campus_visit (
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+day TEXT,
+slots INTEGER
+);
